@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="230" viewBox="0 0 1120 230">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#497c88"/></marker></defs>
+<rect width="1120" height="230" rx="16" fill="#f0f5f6"/>
+<g font-family="Microsoft YaHei, sans-serif" text-anchor="middle" fill="#163b48">
+<g fill="white" stroke="#96b8c0" stroke-width="2"><rect x="15" y="25" width="160" height="74" rx="9"/><rect x="199" y="25" width="160" height="74" rx="9"/><rect x="383" y="25" width="160" height="74" rx="9"/><rect x="567" y="25" width="160" height="74" rx="9"/><rect x="751" y="25" width="160" height="74" rx="9"/><rect x="935" y="25" width="170" height="74" rx="9"/><rect x="751" y="145" width="354" height="58" rx="9"/></g>
+<g font-size="23"><text x="95" y="72">生成题卡</text><text x="279" y="72">完成专注</text><text x="463" y="72">回答短题</text><text x="647" y="72">保存与判分</text><text x="831" y="72">写入待同步</text><text x="1020" y="72">Agent 建任务</text><text x="928" y="183">失败保留状态，首页重试</text></g>
+<g stroke="#497c88" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M175 62H193"/><path d="M359 62H377"/><path d="M543 62H561"/><path d="M727 62H745"/><path d="M911 62H929"/><path d="M1020 99V137"/><path d="M750 174H710V116H831V104"/></g>
+<text x="342" y="164" font-size="22">成功回执 → 清除待同步 → 到期打开应用</text><text x="342" y="197" font-size="18" fill="#516e77">情境推荐另行检查压力、静止、到期和冷却条件</text>
+</g></svg>

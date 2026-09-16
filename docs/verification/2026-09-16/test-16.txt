@@ -1,0 +1,30 @@
+ok - extracts tagged JSON without surrounding prose
+ok - extracts a balanced JSON object containing braces in strings
+ok - normalizes unsafe plan fields
+ok - keeps exactly three concise options and unique card ids
+ok - normalizes the compact Agent card format
+ok - normalizes document plans and keeps their source
+ok - accepts only structured voice control results
+ok - accepts only an explicit successful schedule result
+ok - quotes and bounds untrusted topic data in prompts
+ok - wrong answer retries in ten minutes
+ok - correct answers expand intervals with a cap
+ok - selects an overdue card before a future card
+ok - recalculates progress and next due time
+ok - Goldfish deploy targets the configured AI Agent data directory
+ok - Goldfish build applies the reproducible ai_agent patch series
+ok - material import helper accepts only bounded local text documents
+ok - page navigation does not depend on the unavailable Goldfish router feature
+ok - Agent and storage calls declare completion callbacks and an offline timeout
+ok - plan creation stays in one concise model turn
+ok - document import is pinned to one local inbox
+ok - context feedback adapts the personal threshold and acceptance rate
+ok - context recommendation requires opt-in, low stress, stillness, and a due review
+ok - smart review is optional and isolated on a capability-specific page
+ok - smart review monitoring lives at app scope and accepts explicit feedback
+ok - plan page exposes voice and local material import paths
+ok - importPlan catches extraction errors and returns a fallback plan with document source
+ok - cooldown rechecks current gates so a stale ready state does not persist
+ok - focus and quiz flows treat vibration as an optional device capability
+
+28 tests passed

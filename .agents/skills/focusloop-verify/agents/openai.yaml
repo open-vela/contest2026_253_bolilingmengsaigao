@@ -1,0 +1,4 @@
+interface:
+  display_name: "FocusLoop Verify"
+  short_description: "Build, test, and audit the FocusLoop contest deliverables"
+  default_prompt: "Use $focusloop-verify to validate the FocusLoop QuickApp and submission artifacts."

@@ -14,7 +14,7 @@ FocusLoop 是一款运行在 openvela 手表上的主动学习应用。用户可
 | --- | --- | --- |
 | ![Goldfish 学习总览](docs/screenshots/focusloop-goldfish-dashboard.png) | ![Goldfish 专注计时](docs/screenshots/focusloop-goldfish-focus.png) | ![Goldfish 答题反馈](docs/screenshots/focusloop-goldfish-quiz-result.png) |
 
-[查看正式技术报告（PDF）](docs/FocusLoop_Project_Report.pdf) · [查看评委速览（PDF）](docs/FocusLoop_Judge_Overview.pdf)
+[查看正式技术报告（官方模板 PDF）](docs/FocusLoop_Project_Report.pdf) · [查看测试证据](docs/verification/2026-09-16/summary.json)
 
 ## 要解决的问题
 
@@ -67,14 +67,22 @@ flowchart LR
 
 - 五页 QuickApp 学习流程已完成；
 - FocusLoop Skill 与 `system.velaclaw` 调用已完成；
-- 26 项逻辑与集成约束测试全部通过；连续 20 轮测试共 520 项检查无失败；
-- Windows AIoT Toolkit 连续 5 轮构建通过，debug RPK 约 72.4 KB；
+- 2026-09-16 复测：28 项逻辑与集成约束测试，连续 20 轮共 560 项检查无失败；
+- Windows AIoT Toolkit 连续 5 轮构建通过，已提交 debug RPK 为 72,703 字节；
 - 生产依赖漏洞为 0；RPK 和 SHA-256 已放入 `artifacts/`；
 - openvela Goldfish 系统 3561 个目标完整构建通过；
 - 在 `xiaomi_watch_s1` 466×466 Goldfish 中完成页面导航、离线计划、专注、答题、间隔更新和本地存储验证；
 - Goldfish 中已验证 QuickApp 请求进入 `ai_agent`、Agent 计划保存和离线回退；新增语音控制桥已通过 Goldfish 完整链接。
 - 智能复习窗口使用大赛健康接口定义，并对不支持 `service.health` 的设备保留独立降级状态；健康接口真机运行仍需在 miwear 镜像中验收。
 - 开发侧提供 `focusloop-verify` Skill，可一键检查测试、构建、依赖、RPK、疑似凭证和交付文案。
+
+逐轮命令输出、退出码和用时见 [验证证据](docs/verification/2026-09-16/summary.json)；范围为宿主机测试与构建，不代表手表功耗、模型延迟或 ASR 准确率。复测命令：
+
+    node scripts/collect_verification.cjs
+
+正式报告直接填写官方 Word 模板，保留信息表、摘要与 3.1–3.7 章节，并导出为 PDF。正文位于 docs/report/template-content.json，在 Windows / Microsoft Word 环境执行：
+
+    .\scripts\build_official_report.ps1 -Template .\docs\report\official-submission-template.docx
 
 ## 导入学习材料
 

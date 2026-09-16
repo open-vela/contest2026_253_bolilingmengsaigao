@@ -1,0 +1,345 @@
+{
+  "capturedAt": "2026-09-16T11:31:34.243Z",
+  "sourceCommit": "3066ceb8933e4a96b4c533d8fb88a850efdd87c4",
+  "sourceTree": "7c55a90dce84182fce38b44e299ffefc6599a7fa",
+  "node": "v24.14.1",
+  "platform": "win32",
+  "arch": "x64",
+  "toolkit": "2.0.5",
+  "scope": "Host logic/structural tests and QuickApp builds. No hardware, ASR, model latency or battery measurements.",
+  "testsPerRound": 28,
+  "testRounds": 20,
+  "totalChecks": 560,
+  "buildRounds": 5,
+  "submittedRpk": {
+    "path": "artifacts/FocusLoop-0.1.0-debug.rpk",
+    "bytes": 72703,
+    "sha256": "e781ef8e02b63de9456babb9f010db6580ba4d5cfcbdc61937c67bdd1d942a88"
+  },
+  "runs": [
+    {
+      "name": "test-01",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 79,
+      "output": "test-01.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-02",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 62,
+      "output": "test-02.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-03",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 54,
+      "output": "test-03.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-04",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 62,
+      "output": "test-04.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-05",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 58,
+      "output": "test-05.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-06",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 57,
+      "output": "test-06.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-07",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 53,
+      "output": "test-07.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-08",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 55,
+      "output": "test-08.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-09",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 55,
+      "output": "test-09.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-10",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 61,
+      "output": "test-10.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-11",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 63,
+      "output": "test-11.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-12",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 59,
+      "output": "test-12.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-13",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 65,
+      "output": "test-13.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-14",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 67,
+      "output": "test-14.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-15",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 66,
+      "output": "test-15.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-16",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 65,
+      "output": "test-16.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-17",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 76,
+      "output": "test-17.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-18",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 62,
+      "output": "test-18.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-19",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 68,
+      "output": "test-19.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "test-20",
+      "command": "node",
+      "args": [
+        "test/run.js"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 67,
+      "output": "test-20.txt",
+      "outputSha256": "b3d515c671f715e50685669ca73e3320fe9737ac492a8d96d11a7f1c869743e9",
+      "testsPassed": 28
+    },
+    {
+      "name": "build-1",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/s",
+        "/c",
+        "npm run build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 3652,
+      "output": "build-1.txt",
+      "outputSha256": "6a82c717f03812f6188fdbb4695c3440d939e60444a57fc38c7363738f6c1616"
+    },
+    {
+      "name": "build-2",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/s",
+        "/c",
+        "npm run build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 3872,
+      "output": "build-2.txt",
+      "outputSha256": "6bb7353cc157dc2eea1d4d51a887656e70efbe1fa6de20e53545ad174b953e75"
+    },
+    {
+      "name": "build-3",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/s",
+        "/c",
+        "npm run build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 3970,
+      "output": "build-3.txt",
+      "outputSha256": "ebb02e315666acbd04260eba61203e4187888d5b611ceacabd830fd3b14bfd71"
+    },
+    {
+      "name": "build-4",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/s",
+        "/c",
+        "npm run build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 3786,
+      "output": "build-4.txt",
+      "outputSha256": "85b2468603fe48e62ae878fbec139601d9d5440f2a7c808550e0830b8d5b4adc"
+    },
+    {
+      "name": "build-5",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/s",
+        "/c",
+        "npm run build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 3917,
+      "output": "build-5.txt",
+      "outputSha256": "94f2357c3d166e7a731c3fbe16483aebb9a3e7990bc517d49c6e25b98d0599f7"
+    },
+    {
+      "name": "audit-production",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/s",
+        "/c",
+        "npm audit --omit=dev --json"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1148,
+      "output": "audit-production.txt",
+      "outputSha256": "5ca4d400ccf8f9fa3dc269e9c9bc407ca45e39f9af624d4988ec3ce8ecab821c"
+    }
+  ]
+}

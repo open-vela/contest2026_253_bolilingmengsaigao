@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="360" viewBox="0 0 1120 360">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#497c88"/></marker></defs>
+<rect width="1120" height="360" rx="16" fill="#f0f5f6"/>
+<g font-family="Microsoft YaHei, sans-serif" text-anchor="middle" fill="#163b48">
+<g fill="white" stroke="#96b8c0" stroke-width="2"><rect x="20" y="30" width="245" height="100" rx="10"/><rect x="307" y="30" width="270" height="100" rx="10"/><rect x="620" y="30" width="220" height="100" rx="10"/><rect x="880" y="30" width="220" height="100" rx="10"/><rect x="20" y="210" width="245" height="100" rx="10"/><rect x="307" y="210" width="270" height="100" rx="10"/><rect x="620" y="210" width="220" height="100" rx="10"/><rect x="880" y="210" width="220" height="100" rx="10"/></g>
+<g font-size="24" font-weight="600"><text x="142" y="67">主题 / 材料 / 语音</text><text x="442" y="67">QuickApp 消息桥</text><text x="730" y="67">openvela Agent</text><text x="990" y="67">MiMo-V2.5</text><text x="142" y="247">压力 / 加速度</text><text x="442" y="247">本地判分与情境判断</text><text x="730" y="247">任务查重与定时</text><text x="990" y="247">拉起应用</text></g>
+<g font-size="19" fill="#516e77"><text x="142" y="104">固定收件箱 / PTT·ASR</text><text x="442" y="104">system.velaclaw</text><text x="730" y="104">ai_agent + Skill</text><text x="990" y="104">生成题卡 / 原文依据</text><text x="142" y="284">仅参与设备端计算</text><text x="442" y="284">校验 / 间隔 / 进度持久化</text><text x="730" y="284">cron_list → cron_add</text><text x="990" y="284">launch_quickapp</text></g>
+<g fill="none" stroke="#497c88" stroke-width="3" marker-end="url(#arrow)"><path d="M265 80H299"/><path d="M577 80H612"/><path d="M840 80H872"/><path d="M265 260H299"/><path d="M577 260H612"/><path d="M840 260H872"/><path d="M990 130V170H442V202"/></g>
+<text x="702" y="163" font-size="18">返回结构化题卡 → 本地规范化</text>
+<text x="555" y="342" font-size="18" fill="#516e77">云端理解内容；设备端保存学习状态，按用户选择执行复习提醒。</text>
+</g></svg>
