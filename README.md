@@ -14,7 +14,7 @@ FocusLoop 是一款运行在 openvela 手表上的主动学习应用。用户可
 | --- | --- | --- |
 | ![Goldfish 学习总览](docs/screenshots/focusloop-goldfish-dashboard.png) | ![Goldfish 专注计时](docs/screenshots/focusloop-goldfish-focus.png) | ![Goldfish 答题反馈](docs/screenshots/focusloop-goldfish-quiz-result.png) |
 
-[查看正式技术报告（官方模板 PDF）](docs/FocusLoop_Project_Report.pdf) · [查看测试证据](docs/verification/2026-09-16/summary.json)
+[查看正式技术报告（官方模板 PDF）](docs/FocusLoop_Project_Report.pdf) · [观看演示视频（3 分 11 秒）](docs/video/FocusLoop_demo.mp4) · [查看测试证据](docs/verification/2026-09-16/summary.json)
 
 ## 要解决的问题
 
@@ -154,7 +154,7 @@ OPENVELA_WORKSPACE="$PWD" \
 quickapp/focusloop/          QuickApp 源码、测试与构建配置
 agent_skills/focusloop.md    FocusLoop Skill
 scripts/                     Goldfish 构建和部署脚本
-docs/                        架构、演示脚本、报告与运行截图
+docs/                        架构、演示脚本、技术报告、演示视频与测试证据
 artifacts/                   已核对的 RPK 与 SHA-256
 ```
 
