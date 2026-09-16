@@ -16,6 +16,10 @@ FocusLoop 是一款运行在 openvela 手表上的主动学习应用。用户可
 
 [查看正式技术报告（官方模板 PDF）](docs/FocusLoop_Project_Report.pdf) · [观看演示视频（3 分 11 秒）](docs/video/FocusLoop_demo.mp4) · [查看测试证据](docs/verification/2026-09-16/summary.json)
 
+## 选题方向
+
+**手表应用创新。** 作品完全在 openvela 快应用框架内实现，使用图形界面与 `ai_agent` 能力，不新增硬件平台、驱动或外接电路。选择这个方向的原因是：手表贴身、能读到压力与活动状态，但屏幕小、可占用时间短，正适合把一次学习压缩成几十秒内能完成的动作；纯快应用形态也让初赛可以直接在模拟器上完成验证。
+
 ## 要解决的问题
 
 学习计划通常不难制定，难的是在合适的时刻真正回来复习。固定提醒不了解用户此刻正在走动、压力较高，还是刚好有几十秒空闲；聊天助手生成内容后，也很少继续跟进下一次学习。手表贴身、可读取设备状态，适合把学习任务压缩成及时、低打扰的短时行动。
@@ -94,6 +98,16 @@ flowchart LR
 
 随后在计划页点击“导入材料”。Agent 只读取 `/data/ai_agent/focusloop/import.txt`，并根据文件内容生成词卡。
 
+## 拉取完整工程
+
+本仓内置 `contest2026_253_bolilingmengsaigao.xml`，其中已把 `quickapp/focusloop` 映射到 `packages/apps/contest2026_253_focusloop`，因此只需拉取一次即可同时获得 openvela 全量源码与本作品：
+
+```bash
+repo init -u https://github.com/open-vela/contest2026_253_bolilingmengsaigao \
+  -b dev-ai-contest-2026 -m contest2026_253_bolilingmengsaigao.xml
+repo sync -c -j8
+```
+
 ## 快速构建
 
 需要 Node.js 16 或更高版本：
@@ -148,6 +162,17 @@ OPENVELA_WORKSPACE="$PWD" \
 
 完整讲解词见 [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md)。
 
+## AI Coding 使用说明
+
+开发使用 Codex 与 Claude Code（MiMo）协作，完整对话日志见 [`logs/`](logs/README.md)。分工如下：
+
+- **需求与方案**：五页流程、复习间隔规则、情境推荐的判定条件由参赛者确定，AI 负责对照 openvela 文档确认可用接口与限制。
+- **模块实现**：题卡解析与规范化、间隔调度、情境判断、本地存储和五个页面由 AI 起草，参赛者逐项对照设备接口修正。
+- **测试与排错**：AI 补充了 28 项逻辑与集成约束测试，并给出 Goldfish 上快应用路由不可用、健康服务缺失等情况的分功能降级方案。
+- **文档与交付**：架构说明、演示脚本、技术报告由 AI 起草，参赛者核对每条技术声明与运行边界。
+
+模型输出不会直接进入设备逻辑：返回内容先按 `<focusloop-json>` 标签提取，再经过字段长度、选项数量和答案索引检查，不合格就回退到内置题目；这条链路本身也有测试覆盖。可复现的测试与构建结果见 [`docs/verification/2026-09-16/`](docs/verification/2026-09-16/summary.json)，复测命令为 `node scripts/collect_verification.cjs`。
+
 ## 项目目录
 
 ```text
@@ -156,6 +181,7 @@ agent_skills/focusloop.md    FocusLoop Skill
 scripts/                     Goldfish 构建和部署脚本
 docs/                        架构、演示脚本、技术报告、演示视频与测试证据
 artifacts/                   已核对的 RPK 与 SHA-256
+logs/                        AI Coding 日志
 ```
 
 FocusLoop 可以用于语言学习、认证备考和企业微课。用户或课程方提供学习材料，Agent 负责整理知识与执行任务，手表负责在更合适的时刻承接一次短时回忆。
