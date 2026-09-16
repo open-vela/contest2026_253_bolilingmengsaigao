@@ -11,7 +11,7 @@
   "platform": "图形能力用于五页 QuickApp 界面、圆形表盘布局与答题反馈；AI 能力通过 system.velaclaw、ai_agent 和自定义 Skill 完成题卡生成及定时工具调用。两个补丁分别增加简短文本响应路径和 QuickApp 语音控制桥，构建脚本可重复应用。语音桥已完成 Goldfish 编译与链接，当前不将此结果视为端到端语音验收。对平台的后续建议是统一 Agent 任务回执、提供材料选择入口，并明确健康订阅在后台的生命周期。",
   "software": "五页 QuickApp 复用内容、调度、情境和存储模块；Agent 的导入、复习和定时操作由 Skill 约束。源码位于 quickapp/focusloop/，系统补丁位于 patches/，构建部署脚本位于 scripts/。项目采用 Apache-2.0 许可。",
   "flow": "创建计划后，用户进行一次专注，再完成短题回答。答题结果立即写入本地存储，更新下一张题卡的到期时间，并提交待同步定时任务。时间型提醒由 Agent 执行；情境推荐只在用户开启功能且应用进程存活时判断。进程被系统结束后，时间型任务继续由 Agent 管理，情境监测在应用再次运行时恢复。",
-  "hardware": "本作品为手表 QuickApp，没有新增平台、驱动、外接电路或 BOM。参赛者未领取大赛开发板，无真机照片或串口日志；运行证据为 xiaomi_watch_s1 Goldfish 模拟器截图与录屏。真实手表的内存、功耗、语音识别和压力订阅尚待测量。",
+  "hardware": "本作品为手表 QuickApp，没有新增平台、驱动、外接电路或 BOM。按大赛说明，纯快应用方向初赛在模拟器上验证即可；参赛者未领取开发板，故无真机照片或串口日志。运行证据为 xiaomi_watch_s1 Goldfish 截图与录屏，真实手表的内存、功耗、语音识别和压力订阅尚待测量。",
   "ui": "界面围绕 466×466 圆形表盘设计，每页突出一个主要动作：首页查看进度和到期题卡；计划页选择主题、语音或材料导入；专注页提供 15、25、40 分钟计时；答题页展示三选一题目及解释；智能窗口提供开启、立即复习和稍后选项。材料导入当前通过 ADB 将不超过 64 KB 的 .txt 或 .md 文件送入固定收件箱，尚未提供面向普通用户的文件选择器。",
   "skill": "agent_skills/focusloop.md 按 [FOCUSLOOP:IMPORT]、[FOCUSLOOP:REVIEW]、[FOCUSLOOP:SCHEDULE] 触发：导入只读固定材料，复习保存进度，调度查重后创建任务。当前部署位置为 /data/ai_agent/skills/review-scheduler.md；FOCUSLOOP_AGENT_DATA_DIR 可配置目录，须与 Agent 实际数据路径一致。另有 focusloop-verify 开发 Skill 检查测试、构建和制品。",
   "environment": "2026 年 9 月 16 日在 Windows 11、Node.js 24.14.1、AIoT Toolkit 2.0.5 上重跑仓内测试与构建。被测应用源码与主办方分支提交 64c703c 一致。历史设备联调环境为 Ubuntu 22.04 下的 xiaomi_watch_s1 / arm64 Goldfish；模拟器核心页面截图位于 docs/screenshots/。本轮未重新测量模型服务、语音识别或健康传感器。",
