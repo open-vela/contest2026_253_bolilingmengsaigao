@@ -14,7 +14,7 @@ FocusLoop 是一款运行在 openvela 手表上的主动学习应用。用户可
 | --- | --- | --- |
 | ![Goldfish 学习总览](docs/screenshots/focusloop-goldfish-dashboard.png) | ![Goldfish 专注计时](docs/screenshots/focusloop-goldfish-focus.png) | ![Goldfish 答题反馈](docs/screenshots/focusloop-goldfish-quiz-result.png) |
 
-[查看正式技术报告（官方模板 PDF）](docs/FocusLoop_Project_Report.pdf) · [观看演示视频（3 分 11 秒）](docs/video/FocusLoop_demo.mp4) · [查看测试证据](docs/verification/2026-09-16/summary.json)
+[查看正式技术报告（官方模板 PDF）](docs/FocusLoop_Project_Report.pdf) · [观看演示视频（3 分 11 秒）](docs/video/FocusLoop_demo.mp4) · [查看测试证据](docs/verification/2026-09-16/summary.json) · [查看真机验证记录](docs/REAL_DEVICE.md)
 
 ## 选题方向
 
@@ -77,6 +77,9 @@ flowchart LR
 - openvela Goldfish 系统 3561 个目标完整构建通过；
 - 在 `xiaomi_watch_s1` 466×466 Goldfish 中完成页面导航、离线计划、专注、答题、间隔更新和本地存储验证；
 - Goldfish 中已验证 QuickApp 请求进入 `ai_agent`、Agent 计划保存和离线回退；新增语音控制桥已通过 Goldfish 完整链接。
+- 真机验证：在黄山派（SF32LB52，390×450 AMOLED）上从源码构建并烧录 openvela，
+  五页流程与答题闭环跑通，开机自检 0 报错；过程中定位并修复 8 项平台侧问题，
+  详见 [真机验证记录](docs/REAL_DEVICE.md)。该板无可用网卡，云端模型路径仍以 Goldfish 为准。
 - 智能复习窗口使用大赛健康接口定义，并对不支持 `service.health` 的设备保留独立降级状态；健康接口真机运行仍需在 miwear 镜像中验收。
 - 开发侧提供 `focusloop-verify` Skill，可一键检查测试、构建、依赖、RPK、疑似凭证和交付文案。
 
